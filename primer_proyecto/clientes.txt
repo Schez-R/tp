@@ -1,0 +1,5 @@
+ADMIN: ignalot2508@gmail.com o (usuario: Mirko)
+contraseña: admin
+
+CLIENTE: sanchez_ramon_20@hotmail.com o (usuario: Ramon)
+contraseña: cliente

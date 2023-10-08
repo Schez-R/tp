@@ -1,0 +1,149 @@
+head {
+    height: 20%;               /* Esta propiedad establece la altura del elemento*/
+    background-color: #69bd45; /*color de fondo del elemento <head>, que representa un tono de verde.*/
+    color: #fff;               /*establece el color del texto blanco dentro del elemento <head>*/  
+    text-align:center;
+    padding: 20px;
+}
+
+body {
+    background-color: #d5f4b9;
+    padding-bottom: 0;
+    height: 60%;
+    text-size-adjust: 100%;
+}
+
+/*Animación del logo de bienvenidos en la pag principal*/
+@keyframes flicker {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.image-with-flicker {
+  animation: flicker 2s infinite; /* Parpadeo cada 2 segundos */
+}
+
+/*Animación de la frase Esto es un vistaso....*/
+@keyframes desplazamiento-izquierda {
+    40% {
+      transform: translateX(40%);
+    }
+    40% {
+      transform: translateX(-40%);
+    }
+}
+
+.desplazamiento {
+    animation: desplazamiento-izquierda 6s linear infinite;
+  }
+
+
+p {
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 50px;
+    padding: auto;
+    min-height: auto; 
+}
+
+h1 {
+    text-align: center;
+ }
+
+ h3 {
+    text-align: center;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #4caf50;
+    padding:10px;
+}
+
+nav ul {
+    list-style:none ;
+    margin:0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-flex;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color:#333;
+    text-decoration: none; /* Elimina el subrayado */
+    padding: 6px 16px;
+    border-radius: 5px;
+    width: 150px;
+}
+
+nav ul li a:hover,
+.dropdown-item:hover,
+.btn-outline-success:hover {
+    background-color: #25bceb;  /*Aplica el color de fondo celeste en el hover*/
+}
+
+/*Receta del día*/
+.ingredientes, .preparacion {
+    text-align: center;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+    background-color: #ffffcc;
+ }
+ 
+ .ingredientesPreparacion h1 {
+    text-align: center;
+    border:10px solid #4caf50;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    background-color: #ffffcc;
+}
+
+/*Pie de pagina*/
+footer {
+    background-color: #4caf50;
+    height: 20%;
+    text-align: center;
+    padding-bottom: 0;
+}
+ 
+.iconos-redes-sociales a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 5px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+
+ .iconos-redes-sociales i {
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+    background-color: white;
+    border: 5px solid rgb(13, 110, 253);
+}
+
+.iconos-redes-sociales a:hover i {
+    color: red;
+}
+
+.derechos {
+    font-size: 15px;
+    color: #aeaeae;
+}
